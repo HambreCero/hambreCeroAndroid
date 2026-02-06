@@ -27,22 +27,16 @@ public class ListaRecetasActivity extends AppCompatActivity {
 
         Log.d("API", "ONCREATE ListaRecetasActivity");
 
-        // 1) Conectar con el RecyclerView del XML
         rvRecetas = findViewById(R.id.rvRecetas);
 
-        // 2) Lista vertical
         rvRecetas.setLayoutManager(new LinearLayoutManager(this));
 
-        // 3) Lista vacía (la llenamos desde API)
         recetas = new ArrayList<>();
 
-        // 4) Adapter
         adapter = new RecetaAdapter(this, recetas);
         rvRecetas.setAdapter(adapter);
 
-        // 5) Cargar desde API (si falla, usamos local)
         cargarDesdeApi();
-        // usarDatosLocales(); // si quieres forzar local, comenta cargarDesdeApi() y descomenta esto
     }
 
     private void cargarDesdeApi() {

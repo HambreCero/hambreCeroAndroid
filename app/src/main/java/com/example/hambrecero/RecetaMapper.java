@@ -10,7 +10,7 @@ public class RecetaMapper {
                 + "\nVegetariana: " + (dto.isVegetarian() ? "Sí" : "No")
                 + "\nÚltima modificación: " + dto.getLastModified();
 
-        int img = R.drawable.lentejas; // imagen por defecto
+        int img = R.drawable.lentejas;
         return new Receta(dto.getId(), dto.getName(), descripcion, img);
     }
 }

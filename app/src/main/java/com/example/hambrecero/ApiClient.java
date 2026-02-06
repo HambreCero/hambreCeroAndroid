@@ -5,11 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
 
-    // 🔁 Mañana solo cambias esta URL192.168.56.1
     public static final String BASE_URL = "http://172.22.254.252:8080/";
-
-    // Emulador: 10.0.2.2
-    // Móvil real: pon la IP de tu PC, ej: http://192.168.1.50:8080/
 
     private static Retrofit retrofit;
 
