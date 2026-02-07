@@ -35,7 +35,7 @@ public class RecetaAdapter extends RecyclerView.Adapter<RecetaAdapter.VH> {
         Receta r = lista.get(position);
 
         holder.tvNombre.setText(r.getNombre());
-        holder.tvDesc.setText(r.getDescripcion());
+        holder.tvDesc.setText(r.getDescripcionCorta());
 
         // Imagen local (si la tienes)
         if (r.getImgResId() != 0) {
@@ -47,7 +47,7 @@ public class RecetaAdapter extends RecyclerView.Adapter<RecetaAdapter.VH> {
             Intent intent = new Intent(context, DetalleRecetaActivity.class);
             intent.putExtra("id", r.getId());
             intent.putExtra("nombre", r.getNombre());
-            intent.putExtra("descripcion", r.getDescripcion());
+            intent.putExtra("descripcion", r.getDescripcionLarga());
             intent.putExtra("imgResId", r.getImgResId());
             context.startActivity(intent);
         });

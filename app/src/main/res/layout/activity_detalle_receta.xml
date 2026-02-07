@@ -1,35 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:background="@android:color/white"
+    android:fillViewport="true">
 
-     <ImageView
-        android:id="@+id/imgReceta"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="centerCrop"
-        android:contentDescription="Foto receta" />
-
-    <TextView
-        android:id="@+id/tvNombre"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Detalle receta"
-        android:textSize="22sp"
-        android:textStyle="bold" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <TextView
-        android:id="@+id/tvId"
-        android:layout_width="54dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="8dp"
-        android:text="ID: -" />
+        <ImageView
+            android:id="@+id/imgReceta"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/app_name" />
 
-    <TextView
-        android:id="@+id/tvDescripcion"
-        android:layout_width="386dp"
-        android:layout_height="118dp"
-        android:text="Descripción" />
-</LinearLayout>
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Nombre receta"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Descripción"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+    <!-- <TextView
+       android:id="@+id/tvId"
+       android:layout_width="54dp"
+       android:layout_height="47dp"
+       android:layout_marginTop="8dp"
+       android:text="ID: -"
+       android:background="@color/black"/> -->
+
+
