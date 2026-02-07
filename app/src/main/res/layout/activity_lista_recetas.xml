@@ -8,5 +8,6 @@
     android:paddingEnd="16dp"
     android:paddingBottom="16dp"
     android:clipToPadding="false"
-    android:background="?attr/colorSurface"
+    android:background="@color/white"
+
     />

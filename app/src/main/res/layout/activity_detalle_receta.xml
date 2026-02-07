@@ -4,6 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
+    <!--android:background="@color/white"-->
+
 
      <ImageView
         android:id="@+id/imgReceta"
@@ -20,7 +22,7 @@
         android:textSize="22sp"
         android:textStyle="bold" />
 
-    <TextView
+     <TextView
         android:id="@+id/tvId"
         android:layout_width="54dp"
         android:layout_height="47dp"
