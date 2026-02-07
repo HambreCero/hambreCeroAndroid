@@ -32,6 +32,6 @@
         android:id="@+id/btnAbrirDetalle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Abrir detalle (prueba)" />
+        android:text="@string/abrir_detalle_prueba" />
 
 </LinearLayout>
