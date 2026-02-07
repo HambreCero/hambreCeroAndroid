@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
-    <!--android:background="@color/white"-->
+    android:padding="16dp"
+    android:background="@color/white">
 
 
      <ImageView
@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
-        android:contentDescription="Foto receta" />
+        android:contentDescription="Foto receta"
+         android:background="@color/black"/>
 
     <TextView
         android:id="@+id/tvNombre"
@@ -20,18 +21,21 @@
         android:layout_height="wrap_content"
         android:text="Detalle receta"
         android:textSize="22sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:background="@color/black"/>
 
-     <TextView
+     <!-- <TextView
         android:id="@+id/tvId"
         android:layout_width="54dp"
         android:layout_height="47dp"
         android:layout_marginTop="8dp"
-        android:text="ID: -" />
+        android:text="ID: -"
+        android:background="@color/black"/> -->
 
     <TextView
         android:id="@+id/tvDescripcion"
         android:layout_width="386dp"
         android:layout_height="118dp"
-        android:text="Descripción" />
+        android:text="Descripción"
+        android:background="@color/black"/>
 </LinearLayout>

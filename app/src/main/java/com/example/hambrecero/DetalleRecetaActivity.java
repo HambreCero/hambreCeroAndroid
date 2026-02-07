@@ -15,7 +15,7 @@ public class DetalleRecetaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detalle_receta);
 
         TextView tvNombre = findViewById(R.id.tvNombre);
-        TextView tvId = findViewById(R.id.tvId);
+        // TextView tvId = findViewById(R.id.tvId);
         TextView tvDescripcion = findViewById(R.id.tvDescripcion);
         ImageView imgReceta = findViewById(R.id.imgReceta);
 
@@ -25,7 +25,7 @@ public class DetalleRecetaActivity extends AppCompatActivity {
         int imgResId = getIntent().getIntExtra("imgResId", 0);
 
         tvNombre.setText(nombre != null ? nombre : "Sin nombre");
-        tvId.setText("ID: " + id);
+        // tvId.setText("ID: " + id);
         tvDescripcion.setText(descripcion != null ? descripcion : "Sin descripción");
         if (imgResId != 0) {
             imgReceta.setImageResource(imgResId);
