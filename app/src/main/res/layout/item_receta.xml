@@ -35,7 +35,7 @@
                 android:id="@+id/tvItemNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="?attr/colorOnSurface"
                 android:maxLines="1"
@@ -45,9 +45,11 @@
                 android:id="@+id/tvItemDesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textSize="14sp"
                 android:textColor="?attr/colorOnSurface"
                 android:alpha="0.75"
-                android:maxLines="2"
+                android:layout_marginTop="4dp"
+                android:maxLines="1"
                 android:ellipsize="end" />
         </LinearLayout>
 

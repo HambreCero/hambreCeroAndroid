@@ -4,21 +4,30 @@ public class Receta {
 
     private long id;
     private String nombre;
-    private String descripcion;
+
+    // ✅ NUEVO: para la lista (coste)
+    private String descripcionCorta;
+
+    // ✅ NUEVO: para el detalle (texto completo)
+    private String descripcionLarga;
 
     private int imgResId;
 
     public long getId() { return id; }
     public String getNombre() { return nombre; }
-    public String getDescripcion() { return descripcion; }
+
+    public String getDescripcionCorta() { return descripcionCorta; }
+    public String getDescripcionLarga() { return descripcionLarga; }
 
     public int getImgResId() { return imgResId; }
     public void setImgResId(int imgResId) { this.imgResId = imgResId; }
 
-    public Receta(long id, String nombre, String descripcion, int imgResId) {
+    // ✅ Constructor nuevo (con corta y larga)
+    public Receta(long id, String nombre, String descripcionCorta, String descripcionLarga, int imgResId) {
         this.id = id;
         this.nombre = nombre;
-        this.descripcion = descripcion;
+        this.descripcionCorta = descripcionCorta;
+        this.descripcionLarga = descripcionLarga;
         this.imgResId = imgResId;
     }
 
