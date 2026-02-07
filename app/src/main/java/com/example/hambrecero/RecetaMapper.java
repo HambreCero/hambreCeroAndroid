@@ -14,10 +14,10 @@ public class RecetaMapper {
         String larga = "Coste: " + dto.getEstimatedCost() + " €"
                 + "\nRaciones: " + dto.getServings()
                 + "\nDificultad: " + dto.getDifficulty()
-                + "\nVegetariana: " + (dto.isVegetarian() ? "Sí" : "No")
-                + "\nÚltima modificación: " + dto.getLastModified();
+                + "\nVegetariana: " + (dto.isVegetarian() ? "Sí" : "No");
+                //+ "\nÚltima modificación: " + dto.getLastModified();
 
-        int img = R.drawable.lentejas;
+        int img = R.drawable.hortalizas;
 
         return new Receta(dto.getId(), dto.getName(), corta, larga, img);
     }
